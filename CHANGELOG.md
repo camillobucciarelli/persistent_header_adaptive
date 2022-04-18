@@ -1,3 +1,7 @@
+## 1.0.2
+
+* Fix lint and platform support
+
 ## 1.0.1
 
 * Fix something to publish package

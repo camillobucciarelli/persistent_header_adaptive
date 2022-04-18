@@ -14,7 +14,11 @@ class AdaptiveHeightDelegate extends SliverPersistentHeaderDelegate {
   });
 
   @override
-  Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
+  Widget build(
+    BuildContext context,
+    double shrinkOffset,
+    bool overlapsContent,
+  ) {
     return OverflowContainer(
       onSizeChange: (value) {
         height = value.height;

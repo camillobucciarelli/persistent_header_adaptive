@@ -37,11 +37,12 @@ class _SizeReportingWidgetState extends State<SizeReportingWidget> {
 
   void _notifySize() {
     final context = _widgetKey.currentContext;
-    if (context == null) return;
-    final size = context.size;
-    if (_oldSize != size) {
-      _oldSize = size;
-      widget.onSizeChange(size!);
+    if (context != null) {
+      final size = context.size;
+      if (_oldSize != size) {
+        _oldSize = size;
+        widget.onSizeChange(size!);
+      }
     }
   }
 }

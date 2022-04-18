@@ -21,7 +21,8 @@ class AdaptiveHeightSliverPersistentHeader extends StatefulWidget {
       _InspectionsSliverPersistentHeaderState();
 }
 
-class _InspectionsSliverPersistentHeaderState extends State<AdaptiveHeightSliverPersistentHeader> {
+class _InspectionsSliverPersistentHeaderState
+    extends State<AdaptiveHeightSliverPersistentHeader> {
   late double _height;
   final _headerKey = GlobalKey();
 

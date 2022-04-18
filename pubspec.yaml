@@ -1,15 +1,18 @@
 name: persistent_header_adaptive
 description: This ia a package that provide capability to create SliverPersistentHeader with intrinsic height
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/camillobucciarelli/persistent_header_adaptive
 platforms:
   android:
   ios:
+  linux:
+  macos:
   web:
+  windows:
 
 environment:
-  sdk: ">=2.16.2 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0 <2.13.0"
 
 dependencies:
   flutter:
