@@ -1,3 +1,7 @@
+## 2.0.0
+
+* Refactored for flutter 3
+
 ## 1.0.2
 
 * Fix lint and platform support
