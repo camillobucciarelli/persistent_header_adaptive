@@ -1,17 +1,16 @@
 import 'package:flutter/widgets.dart';
 
 class SizeReportingWidget extends StatefulWidget {
+  const SizeReportingWidget({
+    super.key,
+    required this.child,
+    required this.onSizeChange,
+  });
   final Widget child;
   final ValueChanged<Size> onSizeChange;
 
-  const SizeReportingWidget({
-    Key? key,
-    required this.child,
-    required this.onSizeChange,
-  }) : super(key: key);
-
   @override
-  _SizeReportingWidgetState createState() => _SizeReportingWidgetState();
+  State<SizeReportingWidget> createState() => _SizeReportingWidgetState();
 }
 
 class _SizeReportingWidgetState extends State<SizeReportingWidget> {

@@ -3,18 +3,19 @@ import 'package:flutter/widgets.dart';
 import 'adaptive_height_delegate.dart';
 
 class AdaptiveHeightSliverPersistentHeader extends StatefulWidget {
+  const AdaptiveHeightSliverPersistentHeader({
+    super.key,
+    required this.child,
+    this.pinned = false,
+    this.floating = false,
+    this.needRepaint = false,
+    this.initialHeight = .0,
+  });
   final Widget child;
   final bool pinned;
   final bool floating;
   final double initialHeight;
-
-  const AdaptiveHeightSliverPersistentHeader({
-    Key? key,
-    required this.child,
-    this.pinned = false,
-    this.floating = false,
-    this.initialHeight = .0,
-  }) : super(key: key);
+  final bool needRepaint;
 
   @override
   State<AdaptiveHeightSliverPersistentHeader> createState() =>
@@ -41,6 +42,7 @@ class _InspectionsSliverPersistentHeaderState
       delegate: AdaptiveHeightDelegate(
         height: _height,
         child: widget.child,
+        needRepaint: widget.needRepaint,
         onSizeChange: (height) {
           _height = height;
           _headerKey.currentContext?.findRenderObject()?.markNeedsLayout();
