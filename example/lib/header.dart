@@ -13,9 +13,9 @@ class Header extends StatelessWidget {
         children: [
           const Text('line 1'),
           const SizedBox(height: 20),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: const [
+            children: [
               Text('line 2.1'),
               Text('line 2.2'),
             ],
