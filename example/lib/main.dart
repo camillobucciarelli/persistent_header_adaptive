@@ -7,7 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 }
 
 class Homepage extends StatefulWidget {
-  const Homepage({Key? key}) : super(key: key);
+  const Homepage({super.key});
 
   @override
   State<Homepage> createState() => _HomepageState();
@@ -36,16 +36,16 @@ class _HomepageState extends State<Homepage> {
         child: CustomScrollView(
           slivers: [
             const AdaptiveHeightSliverPersistentHeader(
-              child: Header(),
               initialHeight: 20,
               floating: true,
+              child: Header(),
             ),
             SliverList(
               delegate: SliverChildBuilderDelegate(
                 (context, index) => Card(
                   margin: const EdgeInsets.all(20),
                   child: Padding(
-                    padding: const EdgeInsets.all(20.0),
+                    padding: const EdgeInsets.all(20),
                     child: Text('card $index'),
                   ),
                 ),

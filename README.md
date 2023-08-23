@@ -11,7 +11,7 @@ add this package to the dependencies block in your application.
 ```yaml
 dependencies:
   ...
-  persistent_header_adaptive: ^1.0.0
+  persistent_header_adaptive: ^2.1.0
 ```
 
 ## Usage
@@ -64,6 +64,7 @@ class _HomepageState extends State<Homepage> {
             const AdaptiveHeightSliverPersistentHeader(
               child: Header(),
               floating: true,
+              needRepaint: true,
             ),
             SliverList(
               delegate: SliverChildBuilderDelegate(

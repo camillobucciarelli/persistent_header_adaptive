@@ -3,16 +3,15 @@ import 'package:flutter/widgets.dart';
 import 'size_reporting_widget.dart';
 
 class OverflowContainer extends StatelessWidget {
-  final ValueChanged<Size> onSizeChange;
-  final Widget child;
-  final Alignment alignment;
-
   const OverflowContainer({
-    Key? key,
+    super.key,
     required this.onSizeChange,
     required this.child,
     required this.alignment,
-  }) : super(key: key);
+  });
+  final ValueChanged<Size> onSizeChange;
+  final Widget child;
+  final Alignment alignment;
 
   @override
   Widget build(BuildContext context) {

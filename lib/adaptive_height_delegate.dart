@@ -3,15 +3,16 @@ import 'package:flutter/cupertino.dart';
 import 'overflow_widget.dart';
 
 class AdaptiveHeightDelegate extends SliverPersistentHeaderDelegate {
-  final ValueChanged<double>? onSizeChange;
-  final Widget child;
-  double height;
-
   AdaptiveHeightDelegate({
     required this.height,
     required this.child,
+    this.needRepaint = false,
     this.onSizeChange,
   });
+  final ValueChanged<double>? onSizeChange;
+  final Widget child;
+  final bool needRepaint;
+  double height;
 
   @override
   Widget build(
@@ -37,6 +38,6 @@ class AdaptiveHeightDelegate extends SliverPersistentHeaderDelegate {
 
   @override
   bool shouldRebuild(covariant SliverPersistentHeaderDelegate oldDelegate) {
-    return oldDelegate.maxExtent != height;
+    return needRepaint ? needRepaint : oldDelegate.maxExtent != height;
   }
 }
