@@ -1,6 +1,5 @@
 import 'package:flutter/widgets.dart';
-
-import 'size_reporting_widget.dart';
+import 'package:persistent_header_adaptive/src/size_reporting_widget.dart';
 
 class OverflowContainer extends StatelessWidget {
   const OverflowContainer({
@@ -9,6 +8,7 @@ class OverflowContainer extends StatelessWidget {
     required this.child,
     required this.alignment,
   });
+
   final ValueChanged<Size> onSizeChange;
   final Widget child;
   final Alignment alignment;

@@ -6,6 +6,7 @@ class SizeReportingWidget extends StatefulWidget {
     required this.child,
     required this.onSizeChange,
   });
+
   final Widget child;
   final ValueChanged<Size> onSizeChange;
 
