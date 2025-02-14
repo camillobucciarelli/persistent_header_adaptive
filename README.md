@@ -10,8 +10,7 @@ add this package to the dependencies block in your application.
 
 ```yaml
 dependencies:
-  ...
-  persistent_header_adaptive: ^2.1.0
+  persistent_header_adaptive: ^2.1.1
 ```
 
 ## Usage

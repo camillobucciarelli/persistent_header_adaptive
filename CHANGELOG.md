@@ -1,3 +1,7 @@
+## 2.1.1
+
+* bumped dependencies
+
 ## 2.1.0
 
 * Adding new Flutter lint version and rules, and added needRepaint on [AdaptiveHeightSliverPersistentHeader]
