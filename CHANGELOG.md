@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.3 - 2025-06-21
+
+* Version update
+
 ## 2.1.2 - 2025-06-21
 
 * Enhanced documentation

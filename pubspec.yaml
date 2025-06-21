@@ -1,6 +1,6 @@
 name: persistent_header_adaptive
 description: A Flutter package that provides a SliverPersistentHeader with adaptive height capabilities, automatically adjusting to its content's size without requiring a fixed height.
-version: 2.1.2
+version: 2.1.3
 homepage: https://github.com/camillobucciarelli/persistent_header_adaptive
 
 platforms:
