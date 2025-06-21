@@ -22,10 +22,10 @@ class OverflowContainer extends StatelessWidget {
 
   /// Callback invoked when the size of the child changes.
   final ValueChanged<Size> onSizeChange;
-  
+
   /// The widget to display and measure.
   final Widget child;
-  
+
   /// Alignment of the child within the overflow box.
   final Alignment alignment;
 

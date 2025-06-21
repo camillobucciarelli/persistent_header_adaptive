@@ -19,7 +19,7 @@ class SizeReportingWidget extends StatefulWidget {
 
   /// The widget to display and measure.
   final Widget child;
-  
+
   /// Callback invoked when the measured size of the child changes.
   final ValueChanged<Size> onSizeChange;
 
