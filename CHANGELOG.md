@@ -1,23 +1,44 @@
-## 2.1.1
+# Changelog
 
-* bumped dependencies
+## 2.1.2 - 2025-06-21
 
-## 2.1.0
+* Enhanced documentation
+* Fixed minor issues
+* Updated code comments for better readability
 
-* Adding new Flutter lint version and rules, and added needRepaint on [AdaptiveHeightSliverPersistentHeader]
+## 2.1.1 - 2024-06-21
 
-## 2.0.0
+* Updated dependencies to latest versions
+* Improved package stability
 
-* Refactored for flutter 3
+## 2.1.0 - 2024-04-15
 
-## 1.0.2
+* Added `needRepaint` parameter to `AdaptiveHeightSliverPersistentHeader` for better performance control
+* Updated to newer Flutter lint rules for improved code quality
+* Code optimizations for better performance
 
-* Fix lint and platform support
+## 2.0.0 - 2023-09-08
 
-## 1.0.1
+* Major refactoring for Flutter 3 compatibility
+* Breaking changes:
+  * Updated minimum Flutter SDK requirement to 3.10.1
+  * Improved widget rendering lifecycle
 
-* Fix something to publish package
+## 1.0.2 - 2023-01-20
 
-## 1.0.0
+* Fixed linting issues
+* Added comprehensive platform support
+* Improved project structure
 
-* This is the first release
+## 1.0.1 - 2022-11-05
+
+* Fixed publishing configuration
+* Minor code improvements
+
+## 1.0.0 - 2022-10-15
+
+* Initial stable release
+* Core functionality:
+  * `AdaptiveHeightSliverPersistentHeader` widget
+  * Automatic header height calculation
+  * Support for pinned and floating headers
